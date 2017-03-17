@@ -176,7 +176,7 @@ class XGBoostSparkPipelinePersistence extends SharedSparkContext with Utils {
     val tempPath = TestUtils.createTempDir("cvModel")
     cvModel.write.overwrite.save(tempPath)
 
-    // TODO complete meaningful test
+    // TODO complete meaningful test when persistence problem can be reproduced
     assert(false, true)
   }
 }
